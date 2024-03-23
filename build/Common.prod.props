@@ -22,6 +22,9 @@
     <PackageRequireLicenseAcceptance>true</PackageRequireLicenseAcceptance>
     <PackagePrimaryLicenseFile>$(RepoRoot)\LICENSE.TXT</PackagePrimaryLicenseFile>
     <PackageThirdPartyNoticesFile>$(RepoRoot)\THIRD-PARTY-NOTICES.TXT</PackageThirdPartyNoticesFile>
+    <PackageReadmeFile>$(RepoRoot)\README.md</PackageReadmeFile>
+    <PackageReleaseNotesFile>$(RepoRoot)\VERSIONING.md</PackageReleaseNotesFile>
+    <PackageReleaseNotes>$([System.IO.File]::ReadAllText($(PackageReleaseNotesFile)))</PackageReleaseNotes>
   </PropertyGroup>
 
   <PropertyGroup Label="SourceLinkProperties">
